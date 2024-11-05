@@ -1,3 +1,13 @@
+/* Custom props*/
+:root {
+  --body-bg: #f1f4ff;
+  --green-color: #4dc490;
+  --primary-color: #f03535;
+  --blue-color: #3a2bf8;
+  --black-color: #000 ;
+  --text-color: #555;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -20,7 +30,7 @@ body {
   line-height: 1.5;
   font-family: "Arial", "sans-serif";
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 img {
   max-width: 100%;
