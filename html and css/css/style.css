@@ -37,19 +37,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+*:focus {
+  outline: 2px dotted var(--text-color) ;
+  outline-offset: 2px;
+}
 
 /* CONTAINER */
 .container {
-  max-width: 1192;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1192px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* MAIN CONTENT */
 .main-content {
-  padding-top: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
   flex-grow: 1;
 }
@@ -59,6 +66,7 @@ img {
   display: flex;
 }
 .hero {
+  flex-grow: 1;
   flex-direction: column;
   padding-top: 80px;
   width: 100%;
@@ -103,7 +111,82 @@ img {
   background-color: var(--green-color);
   font-size: 19px;
   padding: 28px;
+}
 
+
+
+/* SIgnup form */
+.signup-list {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 500px;
+
+}
+
+.signup-form {
+  color: #000;
+  margin-left: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-direction: column;
+  padding-top: 60px;
+  width: 100%;
+  max-width: 570px;
+  max-height: 640px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  background-color: #fff;
+  padding-bottom: 60px;
+}
+
+.signup-form-header {
+  font-size: 32px;
+  line-height: 42px;
+}
+.signup-forms {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 105px;
+}
+.signup-form-lists {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #000;
+  font-weight: 600;
+}
+.button-list {
+  padding-top: 10px;
+  flex-direction: column;
+}
+.signup-form-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: var(--blue-color);
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px ;
+  color: var(--text-color-white);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.signup-notice {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #555;
+}
+.signuo-notice-link {
+  font-weight: 500;
+  color: var(--primary-color);
 }
 
 
